@@ -4,8 +4,8 @@ import React from "react";
 const HeroSection = () => {
   return (
     <h1 className="hero-title">
-      {`Hi, my name is `}
-      <span className="text-color-main">Zach</span>
+      {`Hi! My name is `}
+      <span className="gradient-text-color-main">Zach.</span>
       <br />
       I'm a full stack developer.
     </h1>

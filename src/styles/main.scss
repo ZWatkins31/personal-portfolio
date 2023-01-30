@@ -1,2 +1,13 @@
+/*
+Reference for structuring Sass project: https://itnext.io/structuring-your-sass-projects-c8d41fa55ed4
+*/
+
+@import './abstracts/mixins';
 @import './abstracts/variables';
+
+@import './base/base';
 @import './base/typography';
+
+@import './layout/sections';
+
+@import './sections/hero';
