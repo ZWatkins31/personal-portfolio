@@ -8,7 +8,7 @@ const HeroSection = () => {
       <Container>
         <Fade duration={1000} delay={500}>
           <h1 className="hero-title">
-            {`Hi! My name is `}
+            {`Hi! I'm `}
             <span className="gradient-text-color-main">Zach.</span>
             <br />
             {`I'm a Full-Stack Developer.`}
