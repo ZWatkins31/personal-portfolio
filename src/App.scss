@@ -1,41 +1,158 @@
 /******************  Custom Fonts ******************/
+
 @font-face {
-    font-family: 'Jost';
+    font-family: 'Jost-Regular';
     src: url('./assets/fonts/Jost-Regular.ttf');
 }
 
+@font-face {
+    font-family: 'Jost-BoltItalic';
+    src: url('./assets/fonts/Jost-BoldItalic.ttf');
+}
+
 /******************  Variables ******************/
-//// COLORS ////
+
 $primary-color: #855fee;
 $secondary-color: #00cdac;
-// $tertiary-color: #80e8ff;
-// $quaternary-color: #52f1dc;
 
 $white-color: #fff;
 
 $dark-grey: #333333;
 
-$dark-blue-text: #0f1b61; // or #222c56
+$dark-blue-text: #0f1b61;
 
-//// FONT SIZE ////
 $default-font-size: 1.6rem;
 $big-font-size: 4rem;
 $mid-font-size: 2.5rem;
 
-// h1 {
-//     font-family: 'Jost';
-//     font-size: 4rem;
-//     font-weight: 700;
-// }
+/******************  Default Css ******************/
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 75px;
+  }
 
+// img {
+//     width: 100%;
+//     height: auto;
+//   }
 
-.dark-blue-text {
-      color: $dark-blue-text !important;
-}
+/******************  Typography ******************/
+ 
   
 .gradient-text-color-main {
       background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
       background-clip: text;
       color: transparent;
 }
+
+/******************  Mixins ******************/
+
+@mixin respond($breakpoint) {
+    // Phone-xs
+    @if $breakpoint == phone-xs {
+      @media (max-width: 20em) {
+        @content;
+      } //0 - 320px
+    }
+    // Phone
+    @if $breakpoint == phone {
+      @media (max-width: 37.5em) {
+        @content;
+      } //0 - 600px
+    }
+    // Table Portrait
+    @if $breakpoint == tab-port {
+      @media (max-width: 56.25em) {
+        @content;
+      } //900px
+    }
+    // Table Landscape
+    @if $breakpoint == tab-land {
+      @media (max-width: 75em) {
+        @content;
+      } //1200px
+    }
+    // Big Desktop
+    @if $breakpoint == big-desktop {
+      @media (min-width: 112.5em) {
+        @content;
+      } //1800px +
+    }
+  }
+  
+//   // Border White Mixin
+//   @mixin section-borders {
+//     border: 1.5rem solid #fff;
+//     border-top: 0;
+//     border-bottom: 0;
+//   }
+
+
+//////////////////////////  COMPONENTS //////////////////////////
+
+/******************  HeroSection ******************/
+
+#hero {
+    min-height: 100vh;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    border-bottom: 0px;
+    background: $white-color;
+    font-weight: 100;
+    color: $dark-blue-text;
+    padding: 0rem 5.6rem;
+    margin-bottom: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+
+  
+    @include respond(phone) {
+      padding: 0rem $default-font-size;
+    }
+  
+    .hero-title {
+      font-size: 5.6rem;
+      font-family: 'Jost-BoltItalic';
+      font-weight: 700;
+      margin-bottom: 3.2rem;
+      text-align: left;
+  
+      @include respond(tab-land) {
+        font-size: 4rem;
+      }
+      @include respond(tab-port) {
+        font-size: 3.6rem;
+        text-align: center;
+      }
+      @include respond(phone) {
+        font-size: 3.5rem;
+        line-height: 1.5;
+      }
+      @include respond(phone-xs) {
+        font-size: 2.8rem;
+      }
+    }
+  
+    .hero-cta {
+      display: flex;
+  
+      @include respond(tab-port) {
+        justify-content: center;
+      }
+  
+      & a {
+        font-size: 2.4rem;
+  
+        @include respond(phone) {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+
+  

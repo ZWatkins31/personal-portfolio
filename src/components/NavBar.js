@@ -1,11 +1,16 @@
 import React from "react";
+import { useState } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
+import logo from "../assets/images/logo.png";
 // import { HashLink } from "react-router-hash-link";
 import { Linkedin, Github, FileEarmarkPersonFill } from "react-bootstrap-icons";
 
 const NavBar = () => {
+  // State to determine what link we're on
+  const [activeLink, setActiveLink] = useState("home");
+
   return (
-    <Navbar expand="lg">
+    <Navbar expand="md">
       <Container>
         <Navbar.Brand href="#home">
           <img src={""} alt="Logo" />
@@ -32,11 +37,9 @@ const NavBar = () => {
                 <FileEarmarkPersonFill />
               </a>
             </div>
-            {/* <HashLink to="#connect">
-              <button className="vvd">
-                <span>Let’s Connect</span>
-              </button>
-            </HashLink> */}
+            <button className="vvd" onClick={() => console.log("Clicked")}>
+              <span>Let's Connect!</span>
+            </button>
           </span>
         </Navbar.Collapse>
       </Container>
