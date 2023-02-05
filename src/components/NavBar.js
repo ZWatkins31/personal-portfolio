@@ -28,13 +28,13 @@ const NavBar = () => {
           <span className="navbar-text">
             <div className="social-icons">
               <a href="#">
-                <Linkedin color="background" />
+                <Linkedin color="background" size={25} />
               </a>
               <a href="#">
-                <Github />
+                <Github color="background" size={25} />
               </a>
               <a href="#">
-                <FileEarmarkPersonFill />
+                <FileEarmarkPersonFill color="background" size={25} />
               </a>
             </div>
             <button className="vvd" onClick={() => console.log("Clicked")}>

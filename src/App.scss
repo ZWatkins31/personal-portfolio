@@ -12,7 +12,7 @@
 
 /******************  Variables ******************/
 
-$primary-color: #855fee;
+$primary-color: #0090cd;
 $secondary-color: #00cdac;
 
 $white-color: #fff;
@@ -99,9 +99,9 @@ img {
     display: flex;
     align-items: center;
     border-bottom: 0px;
-    background: $white-color;
+    background: #002743;
     font-weight: 100;
-    color: $dark-blue-text;
+    color: $white-color;
     padding: 0rem 5.6rem;
     margin-bottom: 0;
     top: 0;
@@ -162,7 +162,9 @@ img {
 nav.navbar {
     padding: 2px 0;
     position: fixed;
-    background-color: #b9b9b9;
+    /* Add the blur effect */
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
     width: 100%;
     top: 0;
     z-index: 9999;
@@ -200,7 +202,7 @@ span.navbar-text {
 .social-icons a {
     width: 42px;
     height: 42px;
-    background: rgb(225, 16, 16);
+    background: rgb(43, 189, 179);
     display: inline-flex;
     border-radius: 50%;
     margin-right: 6px;
