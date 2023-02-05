@@ -162,32 +162,19 @@ img {
 nav.navbar {
     padding: 2px 0;
     position: fixed;
-    /* Add the blur effect */
-    -webkit-backdrop-filter: blur(8px);
-    backdrop-filter: blur(8px);
     width: 100%;
     top: 0;
     z-index: 9999;
     transition:  0.32s ease-in-out;
+    /* Add blur effect */
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
   }
 
 nav.navbar a.navbar-brand {
     width: 9%;
 }
 
-nav.navbar .navbar-nav .nav-link.navbar-link {
-    font-weight: 400;
-    color: #fff !important;
-    letter-spacing: 0.8px;
-    padding: 0 25px;
-    font-size: 18px;
-    opacity: 0.75;
-  }
-
-nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
-nav.navbar .navbar-nav a.nav-link.navbar-link.active {
-    opacity: 1;
-}
 
 span.navbar-text {
     display: flex;
@@ -225,3 +212,5 @@ span.navbar-text {
 .social-icons a:hover::before {
     transform: scale(1);
 }
+
+@import "~bootstrap/scss/bootstrap";
