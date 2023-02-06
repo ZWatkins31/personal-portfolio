@@ -10,7 +10,7 @@ const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
 
   return (
-    <Navbar expand="md">
+    <Navbar className="navbar" expand="md">
       <Container>
         <Navbar.Brand className="navbar-logo" href="#home">
           <img src={logo} alt="Logo" />
@@ -20,10 +20,18 @@ const NavBar = () => {
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#about">About</Nav.Link>
-            <Nav.Link href="#skills">Skills</Nav.Link>
-            <Nav.Link href="#projects">Projects</Nav.Link>
+            <Nav.Link href="#home">
+              <h5 className="nav-link-text">Home</h5>
+            </Nav.Link>
+            <Nav.Link href="#about">
+              <h5 className="nav-link-text">About</h5>
+            </Nav.Link>
+            <Nav.Link href="#skills">
+              <h5 className="nav-link-text">Skills</h5>
+            </Nav.Link>
+            <Nav.Link href="#projects">
+              <h5 className="nav-link-text">Projects</h5>
+            </Nav.Link>
           </Nav>
           <span className="navbar-text">
             <div className="social-icons">
