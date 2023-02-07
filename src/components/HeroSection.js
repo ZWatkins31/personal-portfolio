@@ -4,7 +4,7 @@ import { Fade } from "react-awesome-reveal";
 
 const HeroSection = () => {
   return (
-    <section id="hero" className="jumbotron">
+    <section id="hero">
       <Container>
         <Fade duration={1000} delay={500}>
           <h1 className="hero-title">

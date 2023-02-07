@@ -52,6 +52,10 @@ img {
     font-family: 'DM Serif Text-Regular';
   }
 
+.hero-title {
+  font-size: 64px;
+}
+
   
 /******************  NavBar ******************/
 
@@ -70,7 +74,7 @@ nav.navbar {
   }
 
 .nav-link-text {
-  color: #5c5a52;
+  color: #feffff;
 }
 
 nav.navbar a.navbar-brand {
