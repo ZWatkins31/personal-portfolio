@@ -13,22 +13,22 @@ const NavBar = () => {
       <div className="logo-icon">
         <h4>The Nav</h4>
       </div>
-      <ul className="nav-links">
-        <li>
-          <a href="#">HOME</a>
-        </li>
-        <li>
-          <a href="#">ABOUT</a>
-        </li>
-        <li>
-          <a href="#">SKILLS</a>
-        </li>
-        <li>
-          <a href="#">PROJECTS</a>
-        </li>
-      </ul>
-      {/* <span className="navbar-text">
-        <div className="social-icons">
+      <div className="nav-links">
+        <a href="#">HOME</a>
+
+        <a href="#">ABOUT</a>
+
+        <a href="#">SKILLS</a>
+
+        <a href="#">PROJECTS</a>
+      </div>
+    </nav>
+  );
+};
+
+export default NavBar;
+
+/* <div className="social-icons">
           <a href="#">
             <Linkedin color="background" size={25} />
           </a>
@@ -38,13 +38,4 @@ const NavBar = () => {
           <a href="#">
             <FileEarmarkPersonFill color="background" size={25} />
           </a>
-        </div>
-        <button className="vvd" onClick={() => console.log("Clicked")}>
-          <span>Let's Connect!</span>
-        </button>
-      </span> */}
-    </nav>
-  );
-};
-
-export default NavBar;
+        </div> */
