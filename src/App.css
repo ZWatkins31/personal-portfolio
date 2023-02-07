@@ -10,6 +10,11 @@
   src: url('./assets/fonts/DMSerifText-Regular.ttf');
 }
 
+@font-face {
+  font-family: 'Poppins';
+  src: url('./assets/fonts/Poppins-Regular.ttf');
+}
+
 /******************  Default Css ******************/
 
 html {
@@ -23,8 +28,7 @@ img {
   }
 
 /******************  Typography ******************/
- 
-  
+
 .gradient-text-color-main {
     color: #17252a;
 }
@@ -41,7 +45,6 @@ img {
     align-items: center;
     border-bottom: 0px;
     background: #3aafa9;
-    color: white;
     padding: 0rem 5.6rem;
     margin-bottom: 0;
     top: 0;
@@ -50,41 +53,47 @@ img {
     right: 0;
     z-index: -1;
     font-family: 'DM Serif Text-Regular';
-  }
+}
 
 .hero-title {
   font-size: 64px;
+  color: #f2f2f2;
 }
 
   
 /******************  NavBar ******************/
 
 
-nav.navbar {
-    padding: 2px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 9999;
-    transition:  0.32s ease-in-out;
-    /* Add blur effect */
-    -webkit-backdrop-filter: blur(8px);
-    backdrop-filter: blur(8px);
-    font-family: 'DM Serif Text-Regular';
-  }
-
-.nav-link-text {
-  color: #feffff;
+nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  top: 0;
+  z-index: 9999;
+  transition:  0.32s ease-in-out;
+  /* Blur effect */
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  font-family: 'Poppins';
+  letter-spacing: 5px;
 }
 
-nav.navbar a.navbar-brand {
-    width: 9%;
+.nav-links {
+  display: flex;
+  /* background-color: white; */
+  justify-content: space-around;
+  width: 50%;
+  list-style: none;
 }
 
-span.navbar-text {
-    display: flex;
-    align-items: center;
+.nav-links a {
+  text-decoration: none;
+  color: #f2f2f2;
 }
+
 
 .social-icons a {
     width: 42px;
@@ -96,7 +105,6 @@ span.navbar-text {
     align-items: center;
     justify-content: center;
     line-height: 1;
-    border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .social-icons a::before {
