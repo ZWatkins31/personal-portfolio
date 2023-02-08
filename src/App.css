@@ -80,6 +80,13 @@ nav {
   
 }
 
+.logo-icon {
+  background-color: transparent;
+  width: 100px;
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+}
+
 .nav-links {
   display: flex;
   /* background-color: rgb(246, 46, 46); */

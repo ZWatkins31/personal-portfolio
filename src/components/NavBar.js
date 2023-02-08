@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-// import logo from "../assets/images/logo.png";
+import logo from "../assets/images/logo.svg";
 // import { HashLink } from "react-router-hash-link";
 import { Linkedin, Github, FileEarmarkPersonFill } from "react-bootstrap-icons";
 
@@ -11,12 +11,12 @@ const NavBar = () => {
   return (
     <nav>
       <div className="logo-icon">
-        <h4>The Nav</h4>
+        <img src={logo} alt="Logo" />
       </div>
       <div className="nav-links">
         <a href="#">HOME</a>
 
-        <a href="#">ABOUT</a>
+        <a href="#">ABOUT ME</a>
 
         <a href="#">SKILLS</a>
 
