@@ -1,3 +1,14 @@
+/*
+MEDIA QUERY MANAGER:
+
+0 - 480px:          Phone
+481px - 768px       Table Portrait
+769px - 1024px      Table Landscape
+1025px - 1200px]   Desktop Normal Styles
+1201px +            Big Desktop
+1em = 16px
+*/
+
 /******************  Custom Fonts ******************/
 
 @font-face {
@@ -70,7 +81,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 8vh;
+  height: 4em;
   z-index: 9999;
   background-color: #17252a;
   /* Blur effect */
@@ -81,8 +92,17 @@ nav {
 }
 
 .logo-icon {
+  height: 100%;
+  width: 8em;
+  /* background-color: red; */
+  padding-left: 2.5em;
+}
+
+.logo-icon img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
   background-color: transparent;
-  width: 100px;
   filter: invert(100%);
   -webkit-filter: invert(100%);
 }
@@ -91,15 +111,10 @@ nav {
   display: flex;
   /* background-color: rgb(246, 46, 46); */
   justify-content: space-around;
-  width: 50%;
+  width: 40%;
   list-style: none;
 }
 
-.logo-icon {
-  color: #f2f2f2;
-  letter-spacing: 5px;
-  padding-left: 2.5%;
-}
 
 .nav-links a {
   text-decoration: none;
@@ -109,8 +124,83 @@ nav {
   /* font-size: 14px; */
 }
 
-.social-icons {
-  display: flex;
-  justify-content: space-around;
+.menu {
+  position: absolute;
+  right: 0px;
+  top: 4em;
+  width: 50%;
+  background-color: red;
+  height: 100vh;
+  z-index: -1;
 }
+
+/* -- mobile display for nav-links -- */
+
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    width: 50%;
+    position: end;
+  }
+}
+
+/* ---------- Burger & toggled menu --------- */
+
+.burger-bar {
+  width: 2.5em;
+  height: 0.25em;
+  background-color: white;
+  margin: 8px;
+  border-radius: 0.25em;
+}
+
+.burger {
+  display: none;
+}
+
+/* ---- mobile display for burger & toggled menu ---- */
+
+@media screen and (max-width: 768px) {
+  .burger {
+    display: inline;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+}
+
+/* --------- sliding menu --------- */
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: inherit;
+}
+
+
+/* ----- animations--------- */
+/* clicked */
+.burger-bar.clicked:nth-child(1){
+  transform: rotate(45deg) translate(0em, 1.125em);
+  transition: ease-out 0.5s;
+}
+
+.burger-bar.clicked:nth-child(2){
+  transform: scale(0.01);
+  transition: ease-out 0.5s;
+}
+
+.burger-bar.clicked:nth-child(3){
+  transform: rotate(135deg) translate(0em, 1em);
+  transition: ease-out 0.5s;
+}
+
+/* unclicked */
+.burger-bar.unclicked {
+  transform: rotate(0) translate(0);
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+}
+
 

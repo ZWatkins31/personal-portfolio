@@ -8,6 +8,23 @@ const NavBar = () => {
   // State to determine what link we're on
   const [activeLink, setActiveLink] = useState("home");
 
+  // State to change burger classes
+  const [burger_class, setBurgerClass] = useState("burger-bar unclicked");
+  const [menu_class, setMenuClass] = useState("menu hidden");
+  const [isMenuClicked, setIsMenuClicked] = useState(false);
+
+  // Function to toggle burger menu change
+  const updateMenu = () => {
+    if (!isMenuClicked) {
+      setBurgerClass("burger-bar clicked");
+      setMenuClass("menu visible");
+    } else {
+      setBurgerClass("burger-bar unclicked");
+      setMenuClass("menu hidden");
+    }
+    setIsMenuClicked(!isMenuClicked);
+  };
+
   return (
     <nav>
       <div className="logo-icon">
@@ -16,12 +33,18 @@ const NavBar = () => {
       <div className="nav-links">
         <a href="#">HOME</a>
 
-        <a href="#">ABOUT ME</a>
+        <a href="#">ABOUT</a>
 
         <a href="#">SKILLS</a>
 
         <a href="#">PROJECTS</a>
       </div>
+      <div className="burger" onClick={updateMenu}>
+        <div className={burger_class}></div>
+        <div className={burger_class}></div>
+        <div className={burger_class}></div>
+      </div>
+      <div className={menu_class}></div>
     </nav>
   );
 };
