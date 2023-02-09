@@ -192,7 +192,12 @@ nav {
   .nav-links {
     display: none;
   }
+}
 
+@media screen and (min-width: 768px) {
+  .menu {
+    display: none; 
+  }
 }
 
 /* --------- sliding menu --------- */
