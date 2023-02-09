@@ -17,7 +17,7 @@ const NavBar = () => {
   const updateMenu = () => {
     if (!isMenuClicked) {
       setBurgerClass("burger-bar clicked");
-      setMenuClass("menu visible");
+      setMenuClass("menu");
     } else {
       setBurgerClass("burger-bar unclicked");
       setMenuClass("menu hidden");
@@ -32,11 +32,8 @@ const NavBar = () => {
       </div>
       <div className="nav-links">
         <a href="#">HOME</a>
-
         <a href="#">ABOUT</a>
-
         <a href="#">SKILLS</a>
-
         <a href="#">PROJECTS</a>
       </div>
       <div className="burger" onClick={updateMenu}>
@@ -44,7 +41,14 @@ const NavBar = () => {
         <div className={burger_class}></div>
         <div className={burger_class}></div>
       </div>
-      <div className={menu_class}></div>
+      <div className={menu_class}>
+        <div className="menu-links">
+          <a href="#">HOME</a>
+          <a href="#">ABOUT</a>
+          <a href="#">SKILLS</a>
+          <a href="#">PROJECTS</a>
+        </div>
+      </div>
     </nav>
   );
 };

@@ -92,8 +92,9 @@ nav {
 }
 
 .logo-icon {
+  position: relative;
   height: 100%;
-  width: 8em;
+  width: 7.75em;
   /* background-color: red; */
   padding-left: 2.5em;
 }
@@ -126,12 +127,36 @@ nav {
 
 .menu {
   position: absolute;
-  right: 0px;
   top: 4em;
   width: 50%;
-  background-color: red;
+  background-color: #17252a;
+  opacity: 0.90;
   height: 100vh;
   z-index: -1;
+  /* Position the menu on the right edge of the screen */
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transition: transform ease-in 0.3s;
+}
+
+.menu-links {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 25%;
+  text-decoration: none;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.menu-links a {
+  text-decoration: none;
+  color: #f2f2f2;
+  letter-spacing: 5px;
+  font-weight: 200;
+  font-size: 25px;
 }
 
 /* -- mobile display for nav-links -- */
@@ -172,13 +197,11 @@ nav {
 
 /* --------- sliding menu --------- */
 .hidden {
-  display: none;
+  /* Slide the drawer _past_ the right edge of the screen */
+  transform: translateX(100%);
+  /* Transition horizontal slide */
+  transition: transform ease-out 0.3s;
 }
-
-.visible {
-  display: inherit;
-}
-
 
 /* ----- animations--------- */
 /* clicked */
