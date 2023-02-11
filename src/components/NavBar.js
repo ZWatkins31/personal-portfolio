@@ -30,13 +30,13 @@ const NavBar = () => {
       <div className="nav-left">
         <div className="social-icons">
           <a href="#">
-            <Linkedin color="background" size={30} />
+            <Linkedin size={30} />
           </a>
           <a href="#">
-            <Github color="background" size={30} />
+            <Github size={30} />
           </a>
           <a href="#">
-            <FileEarmarkPersonFill color="background" size={30} />
+            <FileEarmarkPersonFill size={30} />
           </a>
         </div>
         <div>
