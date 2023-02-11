@@ -91,21 +91,23 @@ nav {
   
 }
 
-.logo-icon {
-  position: relative;
+.nav-left {
+  width: 20em;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: purple;
   height: 100%;
-  width: 7.75em;
-  /* background-color: red; */
-  padding-left: 2.5em;
+  margin-left: 1em;
 }
 
-.logo-icon img {
-  max-width: 100%;
-  max-height: 100%;
-  display: block;
-  background-color: transparent;
-  filter: invert(100%);
-  -webkit-filter: invert(100%);
+.social-icons a {
+  padding: 5px;
+}
+
+.nav-button {
+  font-family: 'Poppins';
+  padding-left: 5px;
 }
 
 .nav-links {

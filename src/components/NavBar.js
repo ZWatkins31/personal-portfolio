@@ -27,11 +27,21 @@ const NavBar = () => {
 
   return (
     <nav>
-      <div className="logo-icon">
-        <img src={logo} alt="Logo" />
-      </div>
-      <div>
-        <button>Let's Connect!</button>
+      <div className="nav-left">
+        <div className="social-icons">
+          <a href="#">
+            <Linkedin color="background" size={30} />
+          </a>
+          <a href="#">
+            <Github color="background" size={30} />
+          </a>
+          <a href="#">
+            <FileEarmarkPersonFill color="background" size={30} />
+          </a>
+        </div>
+        <div>
+          <button className="nav-button">LET'S CONNECT!</button>
+        </div>
       </div>
       <div className="nav-links">
         <a href="#">HOME</a>
