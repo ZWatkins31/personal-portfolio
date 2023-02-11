@@ -30,6 +30,9 @@ const NavBar = () => {
       <div className="logo-icon">
         <img src={logo} alt="Logo" />
       </div>
+      <div>
+        <button>Let's Connect!</button>
+      </div>
       <div className="nav-links">
         <a href="#">HOME</a>
         <a href="#">ABOUT</a>
