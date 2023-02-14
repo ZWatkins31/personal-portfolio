@@ -28,20 +28,7 @@ const NavBar = () => {
   return (
     <nav>
       <div className="nav-left">
-        <div className="social-icons">
-          <a href="#">
-            <Linkedin size={30} />
-          </a>
-          <a href="#">
-            <Github size={30} />
-          </a>
-          <a href="#">
-            <FileEarmarkPersonFill size={30} />
-          </a>
-        </div>
-        <div>
-          <button className="nav-button">LET'S CONNECT!</button>
-        </div>
+        <button className="btn btn-one">LET'S CONNECT!</button>
       </div>
       <div className="nav-links">
         <a href="#">HOME</a>
