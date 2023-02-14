@@ -28,7 +28,7 @@ const NavBar = () => {
   return (
     <nav>
       <div className="nav-left">
-        <button className="btn btn-one">LET'S CONNECT!</button>
+        <button className="cta-btn cta-btn--hero">LET'S CONNECT!</button>
       </div>
       <div className="nav-links">
         <a href="#">HOME</a>
