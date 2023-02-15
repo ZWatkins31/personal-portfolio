@@ -1,4 +1,5 @@
 import React from "react";
+import resume from "../assets/static/resume.pdf";
 import { Linkedin, Github, FileEarmarkPersonFill } from "react-bootstrap-icons";
 
 const SideBars = () => {
@@ -6,13 +7,21 @@ const SideBars = () => {
     <div>
       <div className="sidebar-left">
         <div className="sb-social-icons">
-          <a href="#">
+          <a
+            href="https://www.linkedin.com/in/zach-j-watkins"
+            rel="noreferrer"
+            target="_blank"
+          >
             <Linkedin size={25} />
           </a>
-          <a href="#">
+          <a
+            href="https://github.com/ZWatkins31"
+            rel="noreferrer"
+            target="_blank"
+          >
             <Github size={25} />
           </a>
-          <a href="#">
+          <a href={resume} rel="noreferrer" target="_blank">
             <FileEarmarkPersonFill size={25} />
           </a>
         </div>
@@ -21,7 +30,7 @@ const SideBars = () => {
 
       <div className="sidebar-right">
         <div className="vert-line"></div>
-        <a href="#">zwatkins31@gmail.com</a>
+        <a href="mailto:zwatkins31@gmail.com">zwatkins31@gmail.com</a>
       </div>
     </div>
   );

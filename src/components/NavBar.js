@@ -31,10 +31,10 @@ const NavBar = () => {
         <img src="logo" />
       </div>
       <div className="nav-links">
-        <a href="#">HOME</a>
         <a href="#">ABOUT</a>
         <a href="#">SKILLS</a>
         <a href="#">PROJECTS</a>
+        <a href="#">CONNECT</a>
       </div>
       <div className="burger" onClick={updateMenu}>
         <div className={burger_class}></div>
@@ -43,10 +43,10 @@ const NavBar = () => {
       </div>
       <div className={menu_class}>
         <div className="menu-links">
-          <a href="#">HOME</a>
           <a href="#">ABOUT</a>
           <a href="#">SKILLS</a>
           <a href="#">PROJECTS</a>
+          <a href="#">CONNECT</a>
         </div>
       </div>
     </nav>

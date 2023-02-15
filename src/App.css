@@ -126,7 +126,7 @@ nav {
   top: 0;
   width: 75%;
   background-color: #02aab0;
-  opacity: 0.90;
+  opacity: 0.95;
   height: 100vh;
   z-index: -1;
   /* Position the menu on the right edge of the screen */
@@ -137,7 +137,7 @@ nav {
 .menu-links {
   width: 100%;
   height: 100%;
-  padding-bottom: 25%;
+  padding-bottom: 5%;
   text-decoration: none;  
   display: flex;
   flex-direction: column;
@@ -165,11 +165,21 @@ nav {
 /* ---------- Burger & toggled menu --------- */
 
 .burger-bar {
-  width: 2.75em;
   height: 0.1875em;
   background-color: #00cdac;
   margin: 8px;
   border-radius: 0.09375em;
+}
+
+.burger-bar:nth-child(1) {
+  width: 2.75em;
+}
+.burger-bar:nth-child(2) {
+  width: 2em;
+}
+.burger-bar:nth-child(3) {
+  /* justify-content: right; */
+  width: 1.25em;
 }
 
 .burger {
@@ -205,21 +215,24 @@ nav {
 /* ----- animations--------- */
 /* clicked */
 .burger-bar.clicked:nth-child(1){
-  transform: rotate(45deg) translate(0em, 1.125em);
+  transform: rotate(45deg) translate(0em, 1em);
   transition: ease-out 0.5s;
   background-color: #fff;
+  width: 2.75em;
 }
 
 .burger-bar.clicked:nth-child(2){
   transform: scale(0.01);
   transition: ease-out 0.5s;
   background-color: #fff;
+  width: 2.75em;
 }
 
 .burger-bar.clicked:nth-child(3){
   transform: rotate(135deg) translate(0em, 1em);
   transition: ease-out 0.5s;
   background-color: #fff;
+  width: 2.75em;
 }
 
 /* unclicked */
@@ -227,8 +240,6 @@ nav {
   transform: rotate(0) translate(0);
   transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
 }
-
-
 
 
 /******************  SideBars ******************/
@@ -240,10 +251,7 @@ nav {
   z-index: 1;
   bottom: 0;
   left: 0;
-  /* background-color: #f2f2f2; */
-  transition: .5s ease;
-  overflow-x: hidden;
-  /* padding-top: 50px; */
+  background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -253,17 +261,16 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* background-color: red; */
-  height: 208px;
+  height: 175px;
   width: 75%;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  margin-top: 40px;
 }
 
 .sb-social-icons a {
   color: #00cdac;
-  transform: translateY(45%);
-  display: inline-block;
 }
+
 
 .vert-line {
   width: 2px;
@@ -281,9 +288,7 @@ nav {
   z-index: 1;
   bottom: 0;
   right: 0;
-  /* background-color:#f2f2f2; */
-  transition: .5s ease;
-  overflow-x: hidden;
+  background-color:#f2f2f2;
   /* padding-top: 50px; */
   display: flex;
   flex-direction: column;
