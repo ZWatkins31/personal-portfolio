@@ -88,8 +88,8 @@ nav {
   z-index: 9999;
   /* background-color: #17252a; */
   /* Blur effect */
-  /* -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px); */
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
   font-family: 'Poppins';
   
 }
@@ -227,3 +227,52 @@ nav {
 }
 
 
+
+
+/******************  SideBars ******************/
+
+.sidebar-left {
+  height: 75%;
+  width: 72px;
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  background-color:#fd5c5c;
+  transition: .5s ease;
+  overflow-x: hidden;
+  /* padding-top: 50px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar-left a {
+  padding: 10px;
+  bottom: 0;
+}
+
+.vert-line {
+  width: 2px;
+  background-color: #00cdac;
+  height: 15em;
+  bottom: 20px;
+  position: absolute;
+  border-radius: 1.5px;
+}
+
+.sidebar-right {
+  height: 75%;
+  width: 72px;
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+  background-color:#fd5c5c;
+  transition: .5s ease;
+  overflow-x: hidden;
+  /* padding-top: 50px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
