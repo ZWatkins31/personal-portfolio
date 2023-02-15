@@ -238,7 +238,7 @@ nav {
   z-index: 1;
   bottom: 0;
   left: 0;
-  background-color:#fd5c5c;
+  background-color: #f2f2f2;
   transition: .5s ease;
   overflow-x: hidden;
   /* padding-top: 50px; */
@@ -250,6 +250,7 @@ nav {
 .sidebar-left a {
   padding: 10px;
   bottom: 0;
+  color: #00cdac;
 }
 
 .vert-line {
@@ -268,11 +269,32 @@ nav {
   z-index: 1;
   bottom: 0;
   right: 0;
-  background-color:#fd5c5c;
+  background-color:#f2f2f2;
   transition: .5s ease;
   overflow-x: hidden;
   /* padding-top: 50px; */
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+
+/******************  About ******************/
+
+#about {
+  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  border-bottom: 0px;
+  background: #fff;
+  padding: 0rem 5.6rem;
+  margin-bottom: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  font-family: 'DM Serif Text-Regular';
+  background-color: #00cdac;
 }

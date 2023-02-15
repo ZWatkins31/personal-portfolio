@@ -6,13 +6,13 @@ const SideBars = () => {
     <div>
       <div className="sidebar-left">
         <a href="#">
-          <Linkedin color="background" size={30} />
+          <Linkedin size={30} />
         </a>
         <a href="#">
-          <Github color="background" size={30} />
+          <Github size={30} />
         </a>
         <a href="#">
-          <FileEarmarkPersonFill color="background" size={30} />
+          <FileEarmarkPersonFill size={30} />
         </a>
         <div className="vert-line"></div>
       </div>
