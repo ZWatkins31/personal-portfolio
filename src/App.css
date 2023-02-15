@@ -79,6 +79,7 @@ img {
 /******************  NavBar ******************/
 
 nav {
+  padding-top: 15px;
   position: fixed;
   width: 100%;
   display: flex;
@@ -122,15 +123,13 @@ nav {
 
 .menu {
   position: absolute;
-  top: 4em;
+  top: 0;
   width: 75%;
   background-color: #02aab0;
   opacity: 0.90;
   height: 100vh;
   z-index: -1;
   /* Position the menu on the right edge of the screen */
-  position: absolute;
-  bottom: 0;
   right: 0;
   transition: transform ease-in 0.3s;
 }
@@ -166,11 +165,11 @@ nav {
 /* ---------- Burger & toggled menu --------- */
 
 .burger-bar {
-  width: 2.5em;
-  height: 0.25em;
+  width: 2.75em;
+  height: 0.1875em;
   background-color: #00cdac;
   margin: 8px;
-  border-radius: 0.25em;
+  border-radius: 0.09375em;
 }
 
 .burger {
@@ -208,16 +207,19 @@ nav {
 .burger-bar.clicked:nth-child(1){
   transform: rotate(45deg) translate(0em, 1.125em);
   transition: ease-out 0.5s;
+  background-color: #fff;
 }
 
 .burger-bar.clicked:nth-child(2){
   transform: scale(0.01);
   transition: ease-out 0.5s;
+  background-color: #fff;
 }
 
 .burger-bar.clicked:nth-child(3){
   transform: rotate(135deg) translate(0em, 1em);
   transition: ease-out 0.5s;
+  background-color: #fff;
 }
 
 /* unclicked */
@@ -232,13 +234,13 @@ nav {
 /******************  SideBars ******************/
 
 .sidebar-left {
-  height: 75%;
+  height: 20em;
   width: 72px;
   position: fixed;
   z-index: 1;
   bottom: 0;
   left: 0;
-  background-color: #f2f2f2;
+  /* background-color: #f2f2f2; */
   transition: .5s ease;
   overflow-x: hidden;
   /* padding-top: 50px; */
@@ -247,35 +249,64 @@ nav {
   align-items: center;
 }
 
-.sidebar-left a {
-  padding: 10px;
-  bottom: 0;
+.sb-social-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: red; */
+  height: 208px;
+  width: 75%;
+  justify-content: space-evenly;
+}
+
+.sb-social-icons a {
   color: #00cdac;
+  transform: translateY(45%);
+  display: inline-block;
 }
 
 .vert-line {
   width: 2px;
   background-color: #00cdac;
-  height: 15em;
-  bottom: 20px;
+  height: 6em;
+  bottom: 0;
   position: absolute;
   border-radius: 1.5px;
 }
 
 .sidebar-right {
-  height: 75%;
+  height: 20em;
   width: 72px;
   position: fixed;
   z-index: 1;
   bottom: 0;
   right: 0;
-  background-color:#f2f2f2;
+  /* background-color:#f2f2f2; */
   transition: .5s ease;
   overflow-x: hidden;
   /* padding-top: 50px; */
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.sidebar-right a {
+  writing-mode: vertical-rl;
+  font-family: 'Poppins';
+  font-size: 12px;
+  letter-spacing: 2.75px;
+  color: #00cdac;
+  padding: 10px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar-left {
+    display: none;
+  }
+  .sidebar-right {
+    display: none;
+  }
 }
 
 
