@@ -269,6 +269,13 @@ nav {
 
 .sb-social-icons a {
   color: #00cdac;
+  transition: transform 500ms;
+}
+
+.sb-social-icons a:hover {
+  color: #02aab0;
+  transform: translateY(-5px);
+  size: 15px;
 }
 
 
@@ -303,6 +310,12 @@ nav {
   color: #00cdac;
   padding: 10px;
   text-decoration: none;
+  transition: transform 500ms;
+}
+
+.sidebar-right a:hover {
+  color: #02aab0;
+  transform: translateY(-5px);
 }
 
 @media screen and (max-width: 768px) {
