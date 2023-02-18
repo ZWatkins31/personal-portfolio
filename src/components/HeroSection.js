@@ -11,7 +11,7 @@ const HeroSection = () => {
             {`Hi! I'm `}
             <span className="gradient-text-color-main">Zach.</span>
             <br />
-            {`I'm a Full-Stack Developer.`}
+            {`I'm a Full-Stack Developer / Software Engineer.`}
           </h1>
         </Fade>
       </Container>
