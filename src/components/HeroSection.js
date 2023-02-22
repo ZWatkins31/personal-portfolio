@@ -1,6 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import { Fade } from "react-awesome-reveal";
+import { motion, useScroll } from "framer-motion";
 
 const HeroSection = () => {
   return (
