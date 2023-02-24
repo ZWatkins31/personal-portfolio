@@ -2,9 +2,9 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { motion, useScroll } from "framer-motion";
 
-const Contact = () => {
+const Skills = () => {
   return (
-    <section id="projects">
+    <section id="skills">
       <Container>
         <h1>Contact</h1>
         <div>
@@ -20,4 +20,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Skills;

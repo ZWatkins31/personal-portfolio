@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { motion, useScroll } from "framer-motion";
 
 const Projects = () => {
   return (
