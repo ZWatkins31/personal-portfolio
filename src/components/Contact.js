@@ -4,7 +4,7 @@ import { motion, useScroll } from "framer-motion";
 
 const Contact = () => {
   return (
-    <section id="projects">
+    <section id="contact">
       <Container>
         <h1>Contact</h1>
         <div>
