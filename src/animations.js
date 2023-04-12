@@ -29,32 +29,7 @@ export const slideUp = {
     transition: {
       ease: [0.6, 0.01, 0.05, 0.95],
       duration: 1.5,
-    },
-  },
-};
-
-export const slideRight = {
-  initial: {
-    x: -100,
-  },
-  animate: {
-    x: 0,
-    transition: {
-      ease: [0.6, 0.01, 0.05, 0.95],
-      duration: 1.75,
-    },
-  },
-};
-
-export const slideLeft = {
-  initial: {
-    x: 100,
-  },
-  animate: {
-    x: 0,
-    transition: {
-      ease: [0.6, 0.01, 0.05, 0.95],
-      duration: 1.75,
+      delay: 1,
     },
   },
 };
@@ -68,6 +43,7 @@ export const fadeIn = {
     transition: {
       ease: [0.6, 0.01, 0.05, 0.95],
       duration: 3,
+      delay: 1.5,
     },
   },
 };
