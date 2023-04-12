@@ -73,9 +73,45 @@ img {
 }
 
 .hero-title {
-  font-size: 64px;
+  font-size: 68px;
   color: #304062;
+  padding-left: 6rem;
 }
+
+/* -- mobile display for nav-links -- */
+
+@media screen and (max-width: 1200px) {
+  .hero-title, .gradient-text-color-main {
+    font-size: 58px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #hero {
+    text-align: center;
+  }
+  .hero-title {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 585px) {
+  .hero-title, .gradient-text-color-main {
+    font-size: 52px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hero-title, .gradient-text-color-main {
+    font-size: 48px;
+  }
+
+  #hero {
+    /* background-color: red; */
+    padding: 0rem;
+  }
+}
+
 
   
 /******************  NavBar ******************/
@@ -86,7 +122,7 @@ nav {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: end;
   height: 4em;
   z-index: 9999;
   /* background-color: #17252a; */
@@ -97,14 +133,6 @@ nav {
   
 }
 
-.nav-left {
-  width: 20em;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  /* background-color: purple; */
-  height: 100%;
-}
 
 .nav-links {
   display: flex;

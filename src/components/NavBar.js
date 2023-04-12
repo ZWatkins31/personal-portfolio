@@ -1,8 +1,7 @@
 import React from "react";
 import { useState } from "react";
-import logo from "../assets/images/logo.svg";
-// import { HashLink } from "react-router-hash-link";
-import { Linkedin, Github, FileEarmarkPersonFill } from "react-bootstrap-icons";
+import { motion } from "framer-motion";
+import { staggerChildren, staggerFromAbove } from "../animations";
 
 const NavBar = () => {
   // State to determine what link we're on
@@ -26,16 +25,26 @@ const NavBar = () => {
   };
 
   return (
-    <nav>
-      <div className="nav-left">
-        <img src="logo" />
-      </div>
-      <div className="nav-links">
-        <a href="#">ABOUT</a>
-        <a href="#">SKILLS</a>
-        <a href="#">PROJECTS</a>
-        <a href="#">CONNECT</a>
-      </div>
+    <nav className="nav-bar">
+      <motion.div
+        className="nav-links"
+        initial="initial"
+        animate="animate"
+        variants={staggerChildren}
+      >
+        <motion.a variants={staggerFromAbove} href="#">
+          ABOUT
+        </motion.a>
+        <motion.a variants={staggerFromAbove} href="#">
+          SKILLS
+        </motion.a>
+        <motion.a variants={staggerFromAbove} href="#">
+          PROJECTS
+        </motion.a>
+        <motion.a variants={staggerFromAbove} href="#">
+          CONNECT
+        </motion.a>
+      </motion.div>
       <div className="burger" onClick={updateMenu}>
         <div className={burger_class}></div>
         <div className={burger_class}></div>

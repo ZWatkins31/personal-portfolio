@@ -1,12 +1,14 @@
 import React from "react";
 import resume from "../assets/static/resume.pdf";
 import { Linkedin, Github, FileEarmarkPersonFill } from "react-bootstrap-icons";
+import { motion } from "framer-motion";
+import { slideUp, slideLeft, slideRight, fadeIn } from "../animations";
 
 const SideBars = () => {
   return (
-    <div>
+    <motion.div initial="initial" animate="animate">
       <div className="sidebar-left">
-        <div className="sb-social-icons">
+        <motion.div className="sb-social-icons" variants={fadeIn}>
           <a
             href="https://www.linkedin.com/in/zach-j-watkins"
             rel="noreferrer"
@@ -24,15 +26,17 @@ const SideBars = () => {
           <a href={resume} rel="noreferrer" target="_blank">
             <FileEarmarkPersonFill size={25} />
           </a>
-        </div>
-        <div className="vert-line"></div>
+        </motion.div>
+        <motion.div className="vert-line" variants={slideUp}></motion.div>
       </div>
 
       <div className="sidebar-right">
-        <div className="vert-line"></div>
-        <a href="mailto:zwatkins31@gmail.com">zwatkins31@gmail.com</a>
+        <motion.div className="vert-line" variants={slideUp}></motion.div>
+        <motion.a href="mailto:zwatkins31@gmail.com" variants={fadeIn}>
+          zwatkins31@gmail.com
+        </motion.a>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
