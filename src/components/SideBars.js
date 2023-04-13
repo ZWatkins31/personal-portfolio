@@ -2,7 +2,12 @@ import React from "react";
 import resume from "../assets/static/resume.pdf";
 import { Linkedin, Github, FileEarmarkPersonFill } from "react-bootstrap-icons";
 import { motion } from "framer-motion";
-import { slideUp, slideLeft, slideRight, fadeIn } from "../animations";
+import {
+  slideUp,
+  slideLeft,
+  slideRight,
+  fadeIn,
+} from "../utilities/animations";
 
 const SideBars = () => {
   return (

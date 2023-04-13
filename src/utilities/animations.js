@@ -1,8 +1,8 @@
 export const staggerChildren = {
   animate: {
     transition: {
-      delayChildren: 0.4,
-      staggerChildren: 0.1,
+      // delayChildren: 0.4,
+      staggerChildren: 0.25,
     },
   },
 };
@@ -14,7 +14,7 @@ export const staggerFromAbove = {
   animate: {
     y: 0,
     transition: {
-      ease: [0.6, 0.01, 0.05, 0.95],
+      ease: "linear",
       duration: 1,
     },
   },
@@ -27,8 +27,8 @@ export const slideUp = {
   animate: {
     y: 0,
     transition: {
-      ease: [0.6, 0.01, 0.05, 0.95],
-      duration: 1.5,
+      ease: "linear",
+      duration: 1,
       delay: 1,
     },
   },
@@ -44,6 +44,19 @@ export const fadeIn = {
       ease: [0.6, 0.01, 0.05, 0.95],
       duration: 3,
       delay: 1.5,
+    },
+  },
+};
+
+export const wordAnimation = {
+  initial: {
+    y: 250,
+  },
+  animate: {
+    y: 0,
+    transition: {
+      ease: [0.075, 0.82, 0.165, 1],
+      duration: 2,
     },
   },
 };

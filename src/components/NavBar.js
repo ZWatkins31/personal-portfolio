@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { staggerChildren, staggerFromAbove } from "../animations";
+import { staggerChildren, staggerFromAbove } from "../utilities/animations";
 
 const NavBar = () => {
   // State to determine what link we're on
