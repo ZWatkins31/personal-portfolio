@@ -9,6 +9,14 @@ MEDIA QUERY MANAGER:
 1em = 16px
 */
 
+
+.App {
+  scroll-behavior: smooth;
+}
+
+
+
+
 /******************  Custom Fonts ******************/
 
 @font-face {
@@ -24,6 +32,11 @@ MEDIA QUERY MANAGER:
 @font-face {
   font-family: 'Poppins';
   src: url('./assets/fonts/Poppins-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./assets/fonts/Montserrat-Regular.ttf');
 }
 
 /******************  Default Css ******************/
@@ -155,6 +168,10 @@ nav {
   letter-spacing: 5px;
   font-weight: 200;
   /* font-size: 14px; */
+}
+
+.nav-links a:hover {
+  color: #02aab0;
 }
 
 .menu {
@@ -378,10 +395,125 @@ nav {
   z-index: -1;
   font-family: 'DM Serif Text-Regular';
   background-color: #02aab0;
-  background-image: linear-gradient(45deg, #02aab0 0%, #00cdac 100%);
+  background-image: linear-gradient(-135deg, #02aab0 0%, #00cdac 100%);
   color: white;
 }
 
+#skills h2 {
+  text-align: center;
+  font-size: 36px;
+}
+
+
+/******************  Projects ******************/
+
+#projects {
+  /* font-family: 'Montserrat'; */
+  display: flex;
+  align-items: center;
+  border-bottom: 0px;
+  background-color: #fff;
+  padding: 0rem 5.6rem;
+  z-index: -1;
+  font-family: 'DM Serif Text-Regular';
+}
+
+#projects h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-top: 10px;
+}
+
+
+.proj-card {
+  /* background-color: #b1d9db; */
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 5px;
+  padding-bottom: 20px;
+}
+
+.proj-info {
+  display: flex;
+  flex-direction: column;
+  /* background-color: rgb(220, 127, 33); */
+  height: 100%;
+  font-family: 'Montserrat';
+  padding: 10px;
+  margin: 10px;
+  margin-right: 40px;
+  max-width: 450px;
+}
+
+.proj-tech {
+  display: flex;
+  flex-wrap: wrap;
+  /* text-align: center; */
+  /* background-color: red; */
+  /* justify-content: center; */
+}
+
+.proj-tech div {
+  text-align: center;
+  background-color: #fff;
+  max-width: fit-content;
+  border: solid;
+  border-width: 1px;
+  padding-left: 4px;
+  padding-right: 4px;
+  border-radius: 5px;
+  margin: 2px;
+}
+
+.proj-btn {
+  /* text-align: center; */
+  margin-top: 20px;
+}
+
+.proj-btn button {
+  background-color: white;
+  border-radius: 5px;
+  margin: 2px;
+  border-color: #00cdac;
+  color: #02aab0;
+  font-size: large;
+  font-weight: bold;
+}
+
+.proj-img img {
+  max-width: 620px;
+  min-width: 350px;
+  border-radius: 20px;
+  border: solid;
+  border-color: #00cdac;
+  border-width: 2px;
+}
+
+
+@media screen and (max-width: 900px) {
+  .proj-card {
+    flex-direction: column;
+    border-bottom: solid #304062;
+    /* background-color: red; */
+  }
+
+  .proj-info {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .proj-tech {
+    /* background-color: red; */
+    justify-content: center;
+  }
+
+  .proj-btn {
+    text-align: center;
+  }
+}
 
 
 
