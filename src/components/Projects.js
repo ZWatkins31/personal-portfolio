@@ -12,6 +12,7 @@ import cinema from "../assets/images/cinema.png";
 import reservations from "../assets/images/reservations.png";
 import comments from "../assets/images/comments.png";
 import stocks from "../assets/images/stocks.png";
+import { Link } from "react-router-dom";
 
 const Projects = () => {
   const ref = useRef(null);
@@ -44,8 +45,24 @@ const Projects = () => {
                 <div>Vercel</div>
               </div>
               <div className="proj-btn">
-                <button>Git Hub</button>
-                <button>Deployed App</button>
+                <button>
+                  <a
+                    href="https://github.com/ZWatkins31/starter-restaurant-reservation"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    Git Hub
+                  </a>
+                </button>
+                <button>
+                  <a
+                    href="https://starter-restaurant-reservation-frontend-two.vercel.app/"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    Deployed App
+                  </a>
+                </button>
               </div>
             </div>
           </EaseInRight>
@@ -75,8 +92,24 @@ const Projects = () => {
                 <div>Vercel</div>
               </div>
               <div className="proj-btn">
-                <button>Git Hub</button>
-                <button>Deployed App</button>
+                <button>
+                  <a
+                    href="https://github.com/ZWatkins31/cinema-hub"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    Git Hub
+                  </a>
+                </button>
+                <button>
+                  <a
+                    href="https://cinema-hub.vercel.app/"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    Deployed App
+                  </a>
+                </button>
               </div>
             </div>
           </EaseInRight>
@@ -105,8 +138,24 @@ const Projects = () => {
                 <div>Vercel</div>
               </div>
               <div className="proj-btn">
-                <button>Git Hub</button>
-                <button>Deployed App</button>
+                <button>
+                  <a
+                    href="https://github.com/ZWatkins31/stock-watcher"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    Git Hub
+                  </a>
+                </button>
+                <button>
+                  <a
+                    href="https://stock-watcher-alpha.vercel.app/"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    Deployed App
+                  </a>
+                </button>
               </div>
             </div>
           </EaseInRight>
@@ -135,8 +184,15 @@ const Projects = () => {
                 <div>Vercel</div>
               </div>
               <div className="proj-btn">
-                <button>Git Hub</button>
-                <button>Deployed App</button>
+                <button>
+                  <a
+                    href="https://github.com/ZWatkins31/lets-comment"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    Git Hub
+                  </a>
+                </button>
               </div>
             </div>
           </EaseInRight>

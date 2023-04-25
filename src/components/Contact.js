@@ -6,13 +6,13 @@ const Contact = () => {
   return (
     <section id="contact">
       <Container>
-        <h2>Contact</h2>
+        <h2>Let's Connect!</h2>
         <div>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi
-            neque, ipsa animi maiores repellendu distinctioaperiam earum dolor
-            voluptatum consequatur blanditiis inventore debitis fuga numquam
-            voluptate architecto itaque molestiae.
+            Got a question, looking to network, or want to work together on
+            something? Feel free to reach out! I'm always looking for
+            opportunities to expand upon my skill set and would love to chat
+            about any projects I can help with!
           </p>
         </div>
       </Container>
