@@ -491,7 +491,13 @@ nav {
   color: #02aab0;
   font-size: large;
   font-weight: bold;
+  transition: all 0.75s ease;
 }
+
+.proj-btn button:hover {
+  transform: translateY(-2.5px);
+}
+
 
 .proj-img img {
   max-width: 620px;
@@ -591,4 +597,25 @@ nav {
   align-items: center;
   text-align: center;
   max-width: 815px;
+}
+
+.contact-btn {
+  text-decoration: none;
+  background-color: white;
+  border: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  margin: 2px;
+  border-color: #00cdac;
+  font-size: larger;
+  padding: 10px;
+  color: #02aab0;
+  transition: all 0.75s ease;
+  letter-spacing: 1.5px;
+}
+
+.contact-btn:hover {
+  background-color: #00cdac;
+  color: white;
+  border: #02aab0;
 }

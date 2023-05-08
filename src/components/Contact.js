@@ -15,6 +15,11 @@ const Contact = () => {
             about any projects I can help with!
           </p>
         </div>
+        <div>
+          <a className="contact-btn" href="mailto:zwatkins31@gmail.com">
+            Contact
+          </a>
+        </div>
       </Container>
     </section>
   );

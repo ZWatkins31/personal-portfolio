@@ -32,16 +32,16 @@ const NavBar = () => {
         animate="animate"
         variants={staggerChildren}
       >
-        <motion.a variants={staggerFromAbove} href="#">
+        <motion.a variants={staggerFromAbove} href="#about">
           ABOUT
         </motion.a>
-        <motion.a variants={staggerFromAbove} href="#">
+        <motion.a variants={staggerFromAbove} href="#skills">
           SKILLS
         </motion.a>
-        <motion.a variants={staggerFromAbove} href="#">
+        <motion.a variants={staggerFromAbove} href="#projects">
           PROJECTS
         </motion.a>
-        <motion.a variants={staggerFromAbove} href="#">
+        <motion.a variants={staggerFromAbove} href="#contact">
           CONNECT
         </motion.a>
       </motion.div>
